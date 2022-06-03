@@ -1,0 +1,48 @@
+@import "mixins";
+@import "clases--aux"
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(../assets/fondo.webp);
+    font-family: 'Times New Roman', Times, serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header {
+    a{
+        @include links(green);
+        h1 {
+            text-align: center;
+            font-size: 4rem;
+            text-transform: uppercase;
+        }
+    }    
+    nav {
+        background-color: black;
+        padding: 4rem;
+        ul{
+            display: flex;
+            gap: 2rem;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            li {
+                list-style-type: none;
+                a {
+                   @include links;
+                }
+            }
+        }
+    }
+    
+}
+main {
+  @extend .contenedor;
+  @extend .box;
+
+}
+.container{
+    background-color: black;
+}

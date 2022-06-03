@@ -1,0 +1,20 @@
+.contenedor{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.box {
+    background-color: grey;
+    border-radius: 4px;
+    height: 500px;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    transition: all 400ms ease-in-out;
+
+    @include media-up(medium){
+        width: 400;
+        height: 400;
+    }
+}
